@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Merienda:wght@300;700&display=swap');
+
+:root {
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Merienda', cursive;
+    --fonte3: 'Courgette', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.116);
+    font-family: var(--fonte1);
+}
+
+header  {
+    color: white;
+    background-color: black;
+}
+
+header > h1 {
+    font-size: 6.5vw;
+    padding-top: 50px;
+    padding-left: 400px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+}
+
+header > h2 {
+    font-size: 4vw;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    padding-left: 1000px;
+}
+
+header > p {
+    font-size: 1em;
+    padding-top: 25px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    text-align: right;
+}
+
+header a, footer a {
+    text-decoration: none;
+    text-shadow: 1px;
+    color: inherit;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.5em;
+    padding-left: 1em;
+    font-family: var(--fonte3);
+    font-size: 3vw;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.377);
+}
+
+section > p {
+    padding-bottom: 1.5em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: scroll;
+}
+
+section.imagem { 
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: inset 4px 4px 15px 0px rgba(0, 0, 0, 0.63);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.178);
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.445);
+}
+
+#jpg01 {
+   background-image: url('../images/background01.jpg');
+   background-position: center center;
+}
+
+#jpg02 {
+    background-image: url('../images/background02.webp');
+    background-position: center right;
+}
+
+#png01 {
+    background-image: url('../images/image01.png');
+    background-size: 40vw;
+    margin-right: 10vw; 
+}
+
+#png02 {
+    background-image: url('../images/image02.png');
+    background-size: 30vw;
+}
+
+#png03 {
+    background-image: url('../images/image03.webp');
+    background-size: 30vw;
+    margin-right: 12vw;
+}
+
+#png04 {
+    background-image: url('../images/image04.png');
+    background-size: 35vw;
+    margin-right: 10vw;
+}
+
+#png05 {
+    background-image: url('../images/image05.png');
+    background-size: 45vw;
+    margin-right: 5vw;
+}
+
+footer {
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 7px;
+}
+
+
+
+
